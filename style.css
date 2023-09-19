@@ -1,0 +1,87 @@
+body {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  background-color: antiquewhite;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: white;
+}
+
+.player {
+  border: 2px solid #333;
+  padding: 10px;
+  width: 150px;
+}
+
+h2, .score {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+#newGame {
+  font-weight: 100;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+}
+
+#newGame:hover {
+  background-color: darkseagreen;
+  color: white;
+}
+
+.active {
+  background-color: #f2f2f2;
+}
+
+button {
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+}
+.player {
+  width: 50%;
+  height: 50vh;
+}
+
+.score {
+  color: tomato;
+}
+
+.score_current {
+  font-size: 1rem;
+  background-color: tomato;
+  width: 50%;
+  margin-left: 25%;
+}
+
+#currentScore1,
+#currentScore2 {
+  color: white;
+  font-size: 2rem;
+}
+
+#diceDisplay {
+  font-size: 4rem;
+  background-color: antiquewhite;
+  width: 20%;
+  position: absolute;
+  left: 40vw;
+  top: 40vh;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.winner {
+  background-color: #4caf50;
+  color: white;
+}

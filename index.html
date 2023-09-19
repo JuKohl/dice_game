@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+    <title>Jeu de Dés</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100&display=swap" rel="stylesheet"></head>
 <body>
-  
+    <h1>Jeu de Dés</h1>
+    <button id="newGame"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 14 14" height="14" width="14"><g id="add-1--expand-cross-buttons-button-more-remove-plus-add-+-mathematics-math"><path id="Vector" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="M6.5 0.4642857142857143v12.071428571428571" stroke-width="1"></path><path id="Vector_2" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="M0.4642857142857143 6.46282h12.071428571428571" stroke-width="1"></path></g></svg> Nouvelle Partie </button>
+    <div class="container">
+        <div class="player active" id="player1">
+            <h2>Joueur 1</h2>
+            <div class="score">Score: <br><span id="score1">0</span></div><br>
+            <div class="score_current">Points en cours: <br><span id="currentScore1">0</span></div>
+        </div>
+        <div class="player" id="player2">
+            <h2>Joueur 2</h2>
+            <div class="score">Score: <br><span id="score2">0</span></div><br>
+            <div class="score_current">Points en cours: <br><span id="currentScore2">0</span></div>
+        </div>
+    </div>
+    <div id="diceDisplay">Dé: <br><span id="diceValue">0</span></div>
+    <button id="rollDice"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 14 14" height="14" width="14"><g id="arrow-reload-horizontal-2"><path id="Vector" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="M8.589285714285715 7.892857142857143 6.5 9.982142857142858 8.589285714285715 12.071428571428571" stroke-width="1"></path><path id="Vector_2" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="m4.410714285714286 5.107133571428572 2.0892857142857144 -2.0892857142857144L4.410714285714286 0.9285714285714286" stroke-width="1"></path><path id="Vector 995" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="m6.5 9.982142857142858 4.178571428571429 0c1.0257 0 1.8571428571428572 -0.8314707142857143 1.8571428571428572 -1.8571428571428572l0 -3.25c0 -1.025672142857143 -0.8314428571428572 -1.8571428571428572 -1.8571428571428572 -1.8571428571428572l-1.3928571428571428 0" stroke-width="1"></path><path id="Vector 996" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="m6.5 3.017857142857143 -4.178571428571429 0c-1.025672142857143 0 -1.8571428571428572 0.8314707142857143 -1.8571428571428572 1.8571428571428572l0 3.25c0 1.025672142857143 0.8314707142857143 1.8571428571428572 1.8571428571428572 1.8571428571428572l1.3928571428571428 0" stroke-width="1"></path></g></svg> Lancer le dé</button>
+    <button id="hold"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 14 14" height="14" width="14"><g id="arrow-down-2--down-move-arrow-arrows"><path id="Vector" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="m3.7142857142857144 6.035714285714286 2.7857142857142856 2.7857142857142856 2.7857142857142856 -2.7857142857142856" stroke-width="1"></path><path id="Vector_2" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="M6.5 0.4642857142857143v8.357142857142858" stroke-width="1"></path><path id="Vector_3" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="M3.25 12.535714285714286h6.5" stroke-width="1"></path></g></svg> Capitaliser</button>
+    <button id="resetGame"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 14 14" height="14" width="14"><g id="delete-1--remove-add-button-buttons-delete-cross-x-mathematics-multiply-math"><path id="Vector" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="m12.535714285714286 0.4642857142857143 -12.071428571428571 12.071428571428571" stroke-width="1"></path><path id="Vector_2" stroke="#e3300c" stroke-linecap="round" stroke-linejoin="round" d="m0.4642857142857143 0.4642857142857143 12.071428571428571 12.071428571428571" stroke-width="1"></path></g></svg> Réinitialiser</button>
+    <script src="script.js"></script>
 </body>
 </html>
